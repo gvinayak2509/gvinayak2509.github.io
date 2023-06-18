@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Restaurant</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+  <h1>Awesome Restaurant</h1>
+  <p id="subtitle">Hungry...</p>
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="food.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="slide2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="slide3.jpg" alt="Slide 3">
+    </div>
+  </div>
+
+  <form id="reviewForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="review">Review:</label>
+    <textarea id="review" placeholder="Enter your review"></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <div id="reviewsContainer"></div>
+
+  <script src="sc.js"></script>
+</body>
+</html>

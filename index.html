@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Restaurant</title>
+  <link rel="stylesheet" type="text/css" href="yuv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-AeWvPbQo0Un0Xb8tH1/4Qoq7ytO2T4aVJWs4FSThuD2fZZ2kKZrHkd6TdIzswjjEaCBGKMowE2JrYb9fUp+Vkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+<body>
+
+  
+
+  <h1>Awesome Restaurant</h1>
+  <div class="blur-container">
+    <img src="background.jpg">
+  </div>
+  
+  
+
+
+
+
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="food.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="food1.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="food2.jpg" alt="Slide 3">
+    </div>
+  </div>
+
+  <br>
+
+
+
+  <section id="menu-section">
+    <h2>Menu</h2>
+    <div class="menu-container">
+      <div class="menu-item" data-category="indian">
+        <div class="circle">
+          <img src="indi.jpg" alt="Image 1">
+        </div>
+        <span>Indian</span>
+      </div>
+      <div class="menu-item" data-category="chinese">
+        <div class="circle">
+          <img src="chini.jpg" alt="Image 1">
+        </div>
+        <span>Chinese</span>
+      </div>
+      <div class="menu-item" data-category="italian">
+        <div class="circle">
+          <img src="italian.jpg" alt="Image 1">
+        </div>
+        <span>Italian</span>
+      </div>
+      <div class="menu-item" data-category="desserts">
+        <div class="circle">
+          <img src="desert.jpg" alt="Image 1">
+        </div>
+        <span>Desserts</span>
+      </div>
+      <div class="menu-item" data-category="beverages">
+        <div class="circle">
+          <img src="bever.jpg" alt="Image 1">
+        </div>
+        <span>Beverages</span>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <br>
+  
+
+  <form id="reviewForm">
+    <h2>Submit a Review</h2>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="1">
+      <label for="star5"></label>
+      <input type="radio" id="star4" name="rating" value="2">
+      <label for="star4"></label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3"></label>
+      <input type="radio" id="star2" name="rating" value="4">
+      <label for="star2"></label>
+      <input type="radio" id="star1" name="rating" value="5">
+      <label for="star1"></label>
+    </div>
+    
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <textarea name="reviewText" placeholder="Enter your review"></textarea>
+    <button type="submit">Submit</button>
+    
+
+  </form>
+  
+  <div id="reviewContainer"></div>
+<br>
+<br>
+
+  <p id="subtitle">...behind the scene!!</p>
+  <div class="image-container">
+    <div class="image">
+      <img src="editor.jpg" alt="Image 1">
+      <div class="popup-message">John Doe<br />Editor in Chief</div>
+      <h3>Editor's Headline 1</h3>
+    </div>
+    <div class="image">
+      <img src="editor.jpg" alt="Image 2">
+      <div class="popup-message">Jane Smith<br />Managing Editor</div>
+      <h3>Editor's Headline 2</h3>
+    </div>
+    <div class="image">
+      <img src="editor.jpg" alt="Image 3">
+      <div class="popup-message">David Johnson<br />Senior Editor</div>
+      <h3>Editor's Headline 3</h3>
+    </div>
+  </div>
+
+
+ 
+
+
+ 
+  
+
+  <script src="sc.js"></script>
+
+
+  <div class="open-btn" onclick="openSidePanel()">&#62;</div>
+
+  <!-- Add the side panel -->
+  <div id="sidePanel" class="side-panel">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+
+    <a href="#" class="close-btn" onclick="closeSidePanel()">&times;</a>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Phone: <span class="phone-number">123-456-7890</span></p>
+      <p>Email: <span class="email">info@example.com</span></p>
+      <p>Address: <span class="address">123 Main St, City, Country</span></p>
+      <br>
+      <br>
+      <h2> Opening hours:</h2>
+      <p>10:00 AM to 3:00 PM</p>
+      <p> 5:00 PM to 10:00 PM</p>
+    </div>
+    <div class="map">
+      <h2>Location</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12.97262!2d79.16267!3d1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDEwJzM5LjgiTiA3NMKwMjUnNTIuOCJF!5e0!3m2!1sen!2sus!4v1625669425827!5m2!1sen!2sus"
+      width="600" 
+      height="450" 
+      style="border:0;"
+       allowfullscreen="" 
+       loading="lazy"></iframe>
+      </iframe>
+    </div>
+  </section>
+  
+
+  
+
+<br>
+<br>
+<br>
+
+  <footer>
+    <div class="footer-content">
+      <p class="no-highlight">All rights reserved &copy; 2023</p>
+    </div>
+  </footer>
+  <script src="yuv.js"></script>
+  <script>
+function openSidePanel() {
+    document.getElementById("sidePanel").style.width = "250px";
+  }
+  
+  function closeSidePanel() {
+    document.getElementById("sidePanel").style.width = "0";
+  }
+
+
+
+
+  </script>
+</body>
+</html>

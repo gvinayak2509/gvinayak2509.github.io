@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Restaurant - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your additional CSS styles here */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #reviewsContainer {
+    margin-top: 20px;
+  }
+  
+  .review {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .menuItem {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menuItem h3 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .menuItem p {
+    margin: 10px 0;
+  }
+  
+  .orderButton {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .orderButton:hover {
+    background-color: #0056b3;
+  }
+  </style>
+  <script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const review = document.getElementById("review").value;
+  
+    const reviewElement = document.createElement("div");
+    reviewElement.classList.add("review");
+    reviewElement.textContent = name + ": " + review;
+  
+    document.getElementById("reviewsContainer").appendChild(reviewElement);
+    document.getElementById("reviewForm").reset();
+  });
+  </script>
+</head>
+<body>
+  <h1>Welcome to Awesome Restaurant</h1>
+  <form id="reviewForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="review">Review:</label>
+    <textarea id="review" name="review" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+  <div id="reviewsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
